@@ -1,5 +1,7 @@
 
-
+.container{
+    display:flex;
+}
 .banner{
     background-color: rgb(212, 212, 212);
     width: 500px;
