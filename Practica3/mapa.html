@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mapa.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Mapa web</h1>
+        <p>Direccion: Calle 25B-1 entre 10 y 10A No 318</p>
+        <p>Fecha de hoy: <span id="date"></span></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.350774446927!2d-89.6190693240613!3d20.938423990873815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5672270a784baf%3A0x764b40010695f0d9!2sUniversidad%20Tecnol%C3%B3gica%20Metropolitana!5e0!3m2!1ses-419!2smx!4v1684818753383!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    
+      <script>
+        // Obtener la fecha actual y mostrarla en la página no queria agregar un archivo js jejejeejeje
+        var today = new Date();
+        var dateElement = document.getElementById('date');
+        dateElement.textContent = today.toDateString();
+      </script>
+</body>
+</html>
