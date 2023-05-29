@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Información Personal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+     <h1>Formulario de Información Personal</h1>
+  
+  <form >
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required><br><br>
+    
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    <div class="form-group">
+
+    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+    <select id="dia" name="dia" required>
+      <option value="" disabled selected>Día</option>
+      <!-- Agrega las opciones para los días del mes -->
+    </select>
+    <select id="mes" name="mes" required>
+      <option value="" disabled selected>Mes</option>
+      <!-- Agrega las opciones para los meses -->
+    </select>
+    <select id="anio" name="anio" required>
+      <option value="" disabled selected>Año</option>
+      <!-- Agrega las opciones para los años -->
+    </select><br>
+    </div>
+
+    <label for="ciudadNacimiento">Ciudad de Nacimiento:</label>
+    <input type="text" id="ciudadNacimiento" name="ciudadNacimiento" required><br><br>
+    
+    <label for="paisNacimiento">País de Nacimiento:</label>
+    <input type="text" id="paisNacimiento" name="paisNacimiento" required><br><br>
+    
+    <label for="nacionalidad">Nacionalidad:</label>
+    <input type="text" id="nacionalidad" name="nacionalidad" required><br><br>
+    
+    <label for="numeroPasaporte">Número de Pasaporte:</label>
+    <input type="text" id="numeroPasaporte" name="numeroPasaporte" required><br><br>
+    
+    <label for="paisEmisionPasaporte">País donde ha sido emitido su pasaporte:</label>
+    <input type="text" id="paisEmisionPasaporte" name="paisEmisionPasaporte" required><br><br>
+    
+    <div class="form-group">
+    <label for="fechaEmisionPasaporte">Fecha de Emisión de Pasaporte:</label>
+    <select id="diaEmision" name="diaEmision" required>
+      <option value="" disabled selected>Día</option>
+      <!-- Agrega las opciones para los días del mes -->
+    </select>
+    <select id="mesEmision" name="mesEmision" required>
+      <option value="" disabled selected>Mes</option>
+      <!-- Agrega las opciones para los meses -->
+    </select>
+    <select id="anioEmision" name="anioEmision" required>
+      <option value="" disabled selected>Año</option>
+      <!-- Agrega las opciones para los años -->
+    </select><br><br>
+    </div>
+    
+    <div class="form-group">
+    <label for="fechaVencimientoPasaporte">Fecha de Vencimiento de Pasaporte:</label>
+    <select id="diaVencimiento" name="diaVencimiento" required>
+      <option value="" disabled selected>Día</option>
+        
+    </select>
+    <select id="mesVencimiento" name="mesVencimiento" required>
+      <option value="" disabled selected>Mes</option>
+      <!-- Agrega las opciones para los meses -->
+    </select>
+    <select id="anioVencimiento" name="anioVencimiento" required>
+      <option value="" disabled selected>Año</option>
+      <!-- Agrega las opciones para los años -->
+    </select><br><br>
+    </div>
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
