@@ -1,0 +1,33 @@
+.grid-container {
+  margin-top: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+.grid-item {
+  padding: 20px;
+}
+
+.grid-item img {
+  max-width: 250px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.grid-item h2 {
+  font-size: 30px;
+  margin: 5;
+}
+
+p {
+  font-size: 15px;
+  max-width: 250px;
+  margin: 0 auto;
+}
