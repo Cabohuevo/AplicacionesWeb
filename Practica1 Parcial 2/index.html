@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1:DOM</title>
+</head>
+<body>
+    
+    <p id="intro">
+        Holabola
+    </p>
+
+    <h1 id="titulo">Título original</h1>
+    <p id="p1">Texto original</p>
+    <div id="main">
+        <p id="p">Contenido del div</p>
+    </div>
+  
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+  
+    <h1>Hola Mundo</h1>
+  
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+  
+    <form id="form1">
+        <input type="text" name="input1" value="Valor 1">
+        <input type="text" name="input2" value="Valor 2">
+        <input type="text" name="input3" value="Valor 3">
+        <input type="submit" value="Enviar">
+    </form>
+  
+    <img id="miImagen" width="500px" height="500px" src="imagen.jpg">
+  
+    <p id="demo">Contenido original</p>
+  
+    <button id="btn">Haz clic aquí</button>
+  
+    <form name="miFormulario" onsubmit="return validarFormulario()">
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <input type="number" id="numero" placeholder="Ingrese un número">
+    <script>
+        
+        const button = document.getElementById("btn");
+        button.addEventListener("click", () => {
+            alert("Gracias por dar Click");
+        });
+
+        function validarFormulario() {
+            let x = document.forms["miFormulario"]["nombre"].value;
+            if (x == "") {
+                alert("Se debe completar el nombre");
+                return false;
+            }
+        }
+
+        function miFunction() {
+            let num = document.getElementById("numero").value;
+            let texto;
+            if (isNaN(num) || num < 1 || num > 10) {
+                texto = "Entrada no válida";
+            } else {
+                texto = "Entrada correcta";
+            }
+            document.getElementById("demo").innerHTML = texto;
+        }
+
+    </script>
+</body>
+</html>
